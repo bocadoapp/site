@@ -1,0 +1,85 @@
+body {
+  background: rgb(255,123,79);
+  background: linear-gradient(270deg, rgba(255,123,79) 0%, rgba(250,69,79,1) 100%);
+  font-family: 'Jost', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    margin: initial;
+  }
+}
+
+div.pic {
+  width: 100%;
+
+  svg {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
+}
+
+div.wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+
+  @media screen and (min-width: 768px) {
+    width: 65vw;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  div.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      max-width: 320px;
+      justify-content: flex-start;
+    }
+
+    p {
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: .75em;
+  font-size: 1em;
+  cursor: pointer;
+  width: 12rem;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    margin: initial;
+  }
+}
